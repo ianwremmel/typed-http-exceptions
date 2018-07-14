@@ -19,7 +19,7 @@
     "mocha-reporter-options": "[ -n \"${CI}\" ] && echo '--reporter xunit --reporter-options output=reports/junit/mocha.xml'",
     "lint:types": "tsc --noemit",
     "precommit": "npm run --silent lint:staged",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "test": "mocha $(npm run --silent mocha-reporter-options) './src/**/*-spec.js' './test/*/spec/**/*.js'"
   },
   "engines": {
