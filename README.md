@@ -11,8 +11,8 @@
 [![npm](https://img.shields.io/npm/dm/@ianwremmel/typed-http-exceptions.svg)](https://www.npmjs.com/package/@ianwremmel/typed-http-exceptions)
 
 [![Dependabot badge](https://img.shields.io/badge/Dependabot-active-brightgreen.svg)](https://dependabot.com/)
-[![dependencies Status](https://david-dm.org/@ianwremmel/typed-http-exceptions/status.svg)](https://david-dm.org/@ianwremmel/typed-http-exceptions)
-[![devDependencies Status](https://david-dm.org/@ianwremmel/typed-http-exceptions/dev-status.svg)](https://david-dm.org/@ianwremmel/typed-http-exceptions?type=dev)
+[![dependencies Status](https://david-dm.org/ianwremmel/typed-http-exceptions/status.svg)](https://david-dm.org/ianwremmel/typed-http-exceptions)
+[![devDependencies Status](https://david-dm.org/ianwremmel/typed-http-exceptions/dev-status.svg)](https://david-dm.org/ianwremmel/typed-http-exceptions?type=dev)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 [![CircleCI](https://circleci.com/gh/ianwremmel/typed-http-exceptions.svg?style=svg)](https://circleci.com/gh/ianwremmel/typed-http-exceptions)
