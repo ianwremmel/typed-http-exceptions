@@ -1,6 +1,6 @@
 import {Unauthorized, PaymentRequired, BadRequest} from './http-exceptions-w3c';
 
-class MissingParameter extends BadRequest {
+export class MissingParameter extends BadRequest {
   constructor(keyPath: string, expectedType: string) {
     super(keyPath, expectedType);
   }
@@ -14,7 +14,7 @@ class MissingParameter extends BadRequest {
   }
 }
 
-class InvalidParameter extends BadRequest {
+export class InvalidParameter extends BadRequest {
   constructor(keyPath: string, expectedType: string, receivedType: string) {
     super(keyPath, expectedType, receivedType);
   }
@@ -28,13 +28,13 @@ class InvalidParameter extends BadRequest {
   }
 }
 
-class MalformedJWT extends Unauthorized {
+export class MalformedJWT extends Unauthorized {
   template(): string {
     return `The JWT you supplied appears to be malformed`;
   }
 }
 
-class MissingScope extends Unauthorized {
+export class MissingScope extends Unauthorized {
   constructor(scope: string, scopes: string[]) {
     super(scope, scopes);
   }
@@ -44,7 +44,7 @@ class MissingScope extends Unauthorized {
   }
 }
 
-class QuotaExceeded extends PaymentRequired {
+export class QuotaExceeded extends PaymentRequired {
   constructor(quota: number) {
     super(quota);
   }
