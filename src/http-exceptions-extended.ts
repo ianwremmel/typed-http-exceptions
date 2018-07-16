@@ -15,8 +15,8 @@ export class MissingParameter extends BadRequest {
 }
 
 export class InvalidParameter extends BadRequest {
-  constructor(keyPath: string, expectedType: string, receivedType: string) {
-    super(keyPath, expectedType, receivedType);
+  constructor(keyPath: string, expectedType: string, receivedType: string, value: string) {
+    super(keyPath, expectedType, receivedType, value);
   }
 
   template(keyPath: string, expectedType: string, receivedType: string, value: any) : string{
