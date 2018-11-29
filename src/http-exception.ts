@@ -9,16 +9,7 @@ import {Request} from 'express';
  * Base class for server-side http errors
  */
 export class HttpException extends Exception {
-  /**
-   * Http Status Code
-   * @returns {number} - HTTP Status Code
-   */
   code = 0;
-
-  /**
-   * @returns {Request | null}
-   */
-  req = null;
 
   constructor(...args: any[]) {
     super();
@@ -31,4 +22,13 @@ export class HttpException extends Exception {
   template(...args: any[]): string|undefined {
     return args[0];
   }
+}
+
+export interface HttpException {
+  /**
+   * Http Status Code
+   * @returns {number} - HTTP Status Code
+   */
+  code: number;
+  req: Request | null;
 }
