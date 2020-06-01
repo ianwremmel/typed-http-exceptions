@@ -1,7 +1,6 @@
 'use strict';
 
 /* eslint-env mocha */
-/* eslint-disable require-jsdoc */
 
 const {assert} = require('chai');
 
@@ -71,5 +70,3 @@ function verifyCode([Constructor, code]) {
     });
   });
 }
-
-/* eslint-enable require-jsdoc */

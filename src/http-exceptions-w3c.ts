@@ -1,5 +1,3 @@
-/* eslint-disable export class-methods-use-this */
-
 import {HttpException} from './http-exception';
 
 /**
@@ -19,7 +17,7 @@ import {HttpException} from './http-exception';
  * by the HTTP application.
  * @memberof Koolaid.ErrorHandling.HttpExceptions
  */
-export class ClientError extends HttpException { }
+export class ClientError extends HttpException {}
 
 /**
  * The request could not be understood by the server due to malformed syntax.
@@ -290,7 +288,7 @@ export class ExpectationFailed extends ClientError {
  * method.
  * @memberof Koolaid.ErrorHandling.HttpExceptions
  */
-export class ServerError extends HttpException { }
+export class ServerError extends HttpException {}
 
 /**
  * The server encountered an unexpected condition which prevented it from

@@ -1,8 +1,4 @@
-'use strict';
-
-/* eslint-disable class-methods-use-this */
-
-import {Exception} from '@ianwremmel/exception'
+import {Exception} from '@ianwremmel/exception';
 import {Request} from 'express';
 
 /**
@@ -11,6 +7,7 @@ import {Request} from 'express';
 export class HttpException extends Exception {
   code = 0;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(...args: any[]) {
     super();
     const msg = this.template(...args);
@@ -19,7 +16,8 @@ export class HttpException extends Exception {
     }
   }
 
-  template(...args: any[]): string|undefined {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  template(...args: any[]): string | undefined {
     return args[0];
   }
 }
