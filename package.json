@@ -15,7 +15,6 @@
     "lint:commitmsg": "commitlint -e",
     "lint:eslint": "eslint --ignore --ignore-path .gitignore",
     "lint:js": "npm run --silent lint:eslint -- .",
-    "lint:staged": "lint-staged",
     "mocha-reporter-options": "[ -n \"${CI}\" ] && echo '--reporter xunit --reporter-options output=reports/junit/mocha.xml'",
     "lint:types": "tsc --noemit",
     "precommit": "npm run --silent lint:staged",
@@ -57,7 +56,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e"
+      "commit-msg": "commitlint -e",
+      "pre-commit": "lint-staged"
     }
   }
 }
